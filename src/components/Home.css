@@ -85,3 +85,19 @@
     width: 100px; /* Atur ukuran logo untuk layar kecil */
   }
 }
+/* Menghapus background biru pada hover tombol carousel */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent; /* Menghapus background */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Ini juga bisa digunakan untuk menghapus latar belakang ikon */
+  border-radius: 20%; /* Agar tombol tetap bulat jika diperlukan */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: none; /* Mengubah background jadi hitam transparan */
+}
