@@ -1,0 +1,87 @@
+/* Home.css */
+
+/* Agar carousel memenuhi layar */
+.carousel {
+  position: relative; /* Posisi relative agar elemen child dengan position absolute bisa mengacu ke container ini */
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.carousel-item img,
+.carousel-item video {
+  object-fit: cover; /* Agar gambar/video memenuhi slide */
+  height: 550px; /* Tinggi tetap untuk carousel */
+}
+
+/* Logo overlay */
+.overlay-logo1 {
+  position: absolute; /* Menjadikan logo overlay */
+  top: 43%; /* Atur posisi vertikal */
+  right: 450px; /* Atur jarak dari kiri */
+  transform: translateY(-50%) scale(0.4); /* Geser logo ke kiri dan kecilkan */
+  width: 1080px; /* Atur ukuran logo */
+  height: 5000px;
+  z-index: 1; /* Pastikan gambar overlay berada di atas */
+}
+
+.overlay-logo2 {
+  position: absolute; /* Menjadikan logo overlay */
+  top: 50%; /* Atur posisi vertikal */
+  right: 14%; /* Atur jarak dari kiri */
+  transform: translateY(-50%) scale(0.3); /* Geser logo ke kiri dan kecilkan */
+  width: 50% 20%; /* Atur ukuran logo */
+  height: 500%;
+  z-index: 1; /* Pastikan gambar overlay berada di atas */
+}
+
+.overlay-logo3 {
+  position: absolute; /* Menjadikan logo overlay */
+  top: 43%; /* Atur posisi vertikal */
+  right: 500px; /* Atur jarak dari kiri */
+  transform: translateY(-50%) scale(0.4); /* Geser logo ke kiri dan kecilkan */
+  width: 1000px; /* Atur ukuran logo */
+  height: 5000px;
+  z-index: 1; /* Pastikan gambar overlay berada di atas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 2%; /* Kurangi area klik kontrol */
+  border: none; /* Tidak ada border */
+  top: 50%; /* Atur posisi vertikal */
+  transform: translateY(-50%); /* Geser kontrol ke tengah */
+  z-index: 1; /* Pastikan gambar kontrol berada di atas */
+  background: transparent; /* Menghapus latar belakang */
+  outline: none; /* Menghilangkan outline */
+  pointer-events: all; /* Memastikan kontrol dapat diklik */
+  user-select: none; /* Mencegah teks dipilih saat klik */
+  -webkit-tap-highlight-color: transparent; /* Menghilangkan highlight pada perangkat sentuh */
+}
+
+/* Transisi mulus antar slide */
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Responsif - lebih pendek di layar kecil */
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px;
+  }
+
+  .carousel-item img,
+  .carousel-item video {
+    height: 400px;
+  }
+
+  .overlay-logo1 {
+    width: 100px; /* Atur ukuran logo untuk layar kecil */
+  }
+  .overlay-logo2 {
+    width: 100px; /* Atur ukuran logo untuk layar kecil */
+  }
+  .overlay-logo3 {
+    width: 100px; /* Atur ukuran logo untuk layar kecil */
+  }
+}

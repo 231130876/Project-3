@@ -1,0 +1,32 @@
+.home4 {
+    padding: 70px; /* Padding di luar container untuk ruang ekstra */
+    background-color: #e2e2e2; /* Warna latar belakang container */
+    text-align: center; /* Agar teks di bagian atas berada di tengah */
+  }
+  
+  .home4 h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Jarak bawah antara h1 dan p */
+  }
+  
+  .home4 p {
+    font-size: 18px;
+    margin-top: 0; /* Menghilangkan margin atas default */
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Flexbox untuk gambar agar sejajar horizontal */
+  .home4-images {
+    display: flex;
+    justify-content: center; /* Mengatur agar gambar berada di tengah secara horizontal */
+    gap: 20px; /* Jarak antar gambar */
+    margin-top: 20px; /* Jarak antara teks dan gambar */
+  }
+  
+  .home4-images img {
+    width: 200px; /* Atur ukuran gambar */
+    height: auto;
+    border-radius: 10px; /* Menambahkan sudut melengkung pada gambar */
+  }
+  

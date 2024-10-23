@@ -1,0 +1,41 @@
+/* Styling untuk container utama */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18657f; /* Warna background gelap */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0px 0;
+  }
+  
+  /* Styling untuk teks */
+  .nav p {
+    color: #fff; /* Warna teks putih */
+    font-size: 15px; /* Ukuran teks lebih besar */
+    font-weight: 450px; /* Teks lebih tebal */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+    margin: 0;
+    display: flex;
+    align-items: center; /* Agar teks dan logo sejajar secara vertikal */
+  }
+  
+  /* Styling untuk logo */
+  .nav .logo {
+    width: 100px; /* Ukuran logo */
+    height: auto;
+    margin-left: 10px; /* Jarak antara teks dan logo */
+    vertical-align: middle; /* Agar logo sejajar dengan teks secara vertikal */
+  }
+  
+  /* Responsive - tampilan di perangkat mobile */
+  @media (max-width: 768px) {
+    .nav p {
+      font-size: 18px; /* Ukuran teks lebih kecil di layar kecil */
+    }
+  
+    .nav .logo {
+      width: 200px; /* Ukuran logo lebih kecil di perangkat mobile */
+    }
+  }
+  

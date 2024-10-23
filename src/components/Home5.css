@@ -1,0 +1,28 @@
+.home5 {
+    width: 100%; /* Lebar penuh layar */
+    height: 100vh; /* Tinggi penuh layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas */
+  }
+  
+  .home5 img {
+    width: 100%; /* Gambar mengisi lebar penuh layar */
+    height: 100%; /* Gambar mengisi tinggi penuh layar */
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+  }
+
+  .home6 img {
+    width: 100%; /* Gambar mengisi lebar penuh layar */
+    height: 100%; /* Gambar mengisi tinggi penuh layar */
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+  }
+
+  .footer img {
+    width: 100%; /* Gambar mengisi lebar penuh layar */
+    height: 100%; /* Gambar mengisi tinggi penuh layar */
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+  }
+
+  

@@ -1,0 +1,56 @@
+.home3 {
+    display: flex; /* Menggunakan Flexbox untuk mengatur layout secara horizontal */
+    justify-content: space-between; /* Menjaga jarak antara tiap gambar */
+    align-items: flex-start; /* Menjaga agar elemen tetap di atas */
+    gap: 20px; /* Jarak antar section */
+    padding: 20px;
+    background-color: #f8f8f8; /* Latar belakang */
+  }
+  
+  .section {
+    text-align: center;
+    flex: 1; /* Setiap section menyesuaikan lebar yang tersedia */
+    max-width: 300px; /* Maksimal lebar setiap section */
+    background-color: #ffffff; /* Latar belakang putih untuk setiap section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek card */
+  }
+  
+  .image {
+    width: 100%; /* Gambar memenuhi lebar section */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Jarak antara gambar dan teks */
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stream-now {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .stream-now:hover {
+    color: #517dac; /* Ubah warna text saat mouse hover */
+  }
+  
+  /* Responsif - jika layar kecil, tampilkan secara vertikal */
+  @media (max-width: 768px) {
+    .home3 {
+      flex-direction: column; /* Pada layar kecil, ubah layout menjadi vertikal */
+      align-items: center;
+    }
+  
+    .section {
+      max-width: 100%; /* Lebar penuh pada layar kecil */
+    }
+  }
+  
